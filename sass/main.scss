@@ -1,74 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 body {
     background-color: rgb(71, 71, 184);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+/* header */
+.header {
+  //position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //padding-top: 32px;
+  //padding-bottom: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  z-index: 100;
+}
+.header {
+  height: 100px;
+  background-color: white;
+}
+.header .container {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+}
+/* div контейнер */
+.container {
+  //width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* Убрать декорирование: подчеркивание ссылок,точки,кнопки */
 .link {
     text-decoration: none;
     color: inherit;
-    transition: color var(--animation);
-  }
-  .link:hover,
-  .link:focus {
-    color: rgb(119, 99, 212);
-  }
-  .logo {
+    transition: 500ms ease-in;
+}
+.link:hover,
+.link:focus {
+    color: rgb(29, 29, 161);
+}
+.logo {
     display: block;
     margin-right: 40px; 
-  }
-  
-  .list {
+}
+.list {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-  }
-
-.header {
-    height: 100px;
-    background-color: white;
 }
-
 .list.menu {
     display: inline-flex;
     align-items: center;
-  }
-
+}
 .menu__item:not(:last-child) {
     margin-right: 40px; 
 }
-
-/* div контейнер */
-.container {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (max-width: 767.98px) {
+  .menu-desktop {
+    display: none;
   }
+}
 
 
-/* header */
-.header {
-    //position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    z-index: 100;
-  }
-  .header .container {
-    display: flex;
-    justify-content: center;
-    //align-items: center;
-  }
-  //.header .logo {
-  //  margin-right: 70px;
-  //}
+
+
+ 
 
 
 
@@ -83,4 +100,74 @@ body {
     height: 100px;
     background-color: white;
   }
- 
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    background-color: #ece5da;
+    text-align: center;
+  }
+  
+  h1 {
+    /* margin: 20px; */
+    font-family: "Paytone One";
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+  
+  h1 span {
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 80px;
+    line-height: 80px;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: -4px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   h3 {
+//     overflow: hidden;
+// }
+// 
+// span {
+//     position: relative;
+//     transform: translateY(100%);
+//     transition: .3s;
+//     display: inline-block;
+// }
+// 
+// h3:hover span {
+//     transform: translateY(0);
+// }

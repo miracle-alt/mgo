@@ -1,19 +1,75 @@
 @charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   background-color: #4747b8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* header */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  z-index: 100;
+}
+
+.header {
+  height: 100px;
+  background-color: white;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* div контейнер */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Убрать декорирование: подчеркивание ссылок,точки,кнопки */
 .link {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: color var(--animation);
-  transition: color var(--animation);
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
 }
 
 .link:hover,
 .link:focus {
-  color: #7763d4;
+  color: #1d1da1;
 }
 
 .logo {
@@ -26,11 +82,6 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-}
-
-.header {
-  height: 100px;
-  background-color: white;
 }
 
 .list.menu {
@@ -46,38 +97,31 @@ body {
   margin-right: 40px;
 }
 
-/* div контейнер */
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* header */
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  z-index: 100;
-}
-
-.header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .footer {
   height: 100px;
   background-color: white;
+}
+
+body {
+  background-color: #ece5da;
+  text-align: center;
+}
+
+h1 {
+  /* margin: 20px; */
+  font-family: "Paytone One";
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+h1 span {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  color: #f1ebe5;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  letter-spacing: -4px;
 }
 /*# sourceMappingURL=main.css.map */
