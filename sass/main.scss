@@ -9,10 +9,11 @@ body {
   }
   .link:hover,
   .link:focus {
-    color: var(--accent-color);
+    color: rgb(119, 99, 212);
   }
   .logo {
     display: block;
+    margin-right: 40px; 
   }
   
   .list {
@@ -29,9 +30,11 @@ body {
 
 .list.menu {
     display: inline-flex;
+    align-items: center;
   }
+
 .menu__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 40px; 
 }
 
 /* div контейнер */
@@ -60,10 +63,24 @@ body {
   }
   .header .container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    //align-items: center;
   }
-  .header .logo {
-    margin-right: 70px;
+  //.header .logo {
+  //  margin-right: 70px;
+  //}
+
+
+
+
+
+
+
+
+
+  
+  .footer {
+    height: 100px;
+    background-color: white;
   }
  

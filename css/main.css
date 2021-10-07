@@ -13,11 +13,12 @@ body {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: #7763d4;
 }
 
 .logo {
   display: block;
+  margin-right: 40px;
 }
 
 .list {
@@ -36,6 +37,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__item:not(:last-child) {
@@ -67,15 +71,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header .logo {
-  margin-right: 70px;
+.footer {
+  height: 100px;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
