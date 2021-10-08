@@ -1,3 +1,5 @@
+@import "./components/menu";
+
 html {
   box-sizing: border-box;
 }
@@ -73,14 +75,7 @@ p {
     display: inline-flex;
     align-items: center;
 }
-.menu__item:not(:last-child) {
-    margin-right: 40px; 
-}
-@media screen and (max-width: 767.98px) {
-  .menu-desktop {
-    display: none;
-  }
-}
+
 
 
 
